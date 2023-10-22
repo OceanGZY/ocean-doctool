@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@antv/x6": "^2.15.3",
+    "@antv/x6-vue-shape": "^2.1.1",
     "simple-mind-map": "^0.8.0-fix.1",
     "vue": "^3.3.4"
   },
