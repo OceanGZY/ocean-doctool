@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 17:39:29
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-23 20:20:43
- * @FilePath: /ocean-doctool/src/views/mindflow/MF.vue
+ * @LastEditTime: 2023-10-23 23:20:01
+ * @FilePath: \ocean-doctool\src\views\mindflow\MF.vue
  * @Description: 注释信息
 -->
 <template>
@@ -29,28 +29,37 @@ const graphInit = () => {
         container: document.getElementById("mindflow") as HTMLElement,
         width: 1000,
         height: 765,
-        grid: {
-            size: 10,
-            visible: true,
-            type: "mesh",
-            args: {
-                color: "#efefef",
-                thickness: 1,
-                factor: 10
-            }
+        grid: true,
+        mousewheel: {
+            enabled: true,
+            zoomAtMousePosition: true,
+            modifiers: 'ctrl',
+            minScale: 0.5,
+            maxScale: 3
+        },
+        background: {
+            color: "#f7f9ff"
         },
         autoResize: true,
         interacting: {
             edgeLabelMovable: true
         },
-        background: {
-            color: "#f7f9ff"
-        }
+        highlighting: {
+            magnetAdsorbed: {
+                name: 'stroke',
+                args: {
+                    attrs: {
+                        fill: '#5F95FF',
+                        stroke: '#5F95FF',
+                    },
+                },
+            },
+        },
     })
     graph.fromJSON(data)
 
     const stencil = new Stencil({
-        title: "Stencil",
+        title: "组件",
         target: graph,
         search: true,
         collapsable: true,
@@ -59,38 +68,29 @@ const graphInit = () => {
         groups: [
             {
                 name: 'G1',
-                title: 'Group1',
+                title: '流程图',
             },
             {
                 name: 'G2',
-                title: 'Group2',
+                title: '时序图',
             }
         ],
     })
     document.getElementById('mindflow-stencil')?.appendChild(stencil.container)
 
     const r = new Rect({
-        x: 100,
-        y: 100,
-        width: 100,
-        height: 100,
-        fill: '#000',
+        width: 36,
+        height: 36,
         stroke: '#000',
-        strokeWidth: 2,
-        radius: 10,
-        radiusBorder: '#000',
-        radiusBorderWidth: 2,
-        radiusBorderDasharray: [5, 5],
-        radiusBorderDashoffset: 0,
+        strokeWidth: 1,
     })
-
     const c = new Circle({
-        width: 60,
-        height: 60,
+        width: 40,
+        height: 40,
         attrs: {
-            circle: { fill: '#000', stroke: '#000', strokeWidth: 2, r: 30 },
+            circle: { fill: '#fff', stroke: '#000', strokeWidth: 2, r: 30 },
             text: {
-                text: 'Circle', fill: '#000', fontSize: 12, fontWeight: 'bold'
+                text: '连接', fill: '#000', fontSize: 12,
             }
         }
     })
