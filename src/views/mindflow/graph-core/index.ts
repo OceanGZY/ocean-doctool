@@ -17,12 +17,15 @@ export default class FlowGraph {
     public static init() {
         this.graph = new Graph({
             container: document.getElementById('container')!,
-            width: 1000,
-            height: 800,
+            width: 1366,
+            height: 768,
+            background: {
+                color: '#F2F7FA',
+              },
             grid: {
                 size: 10,
                 visible: true,
-                type: 'doubleMesh',
+                type: 'mesh',
                 args: [
                     {
                         color: '#cccccc',
