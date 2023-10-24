@@ -20,10 +20,52 @@
   resolved "https://registry.npmmirror.com/@antv/x6-geometry/-/x6-geometry-2.0.5.tgz#c158317d74135bedd78c2fdeb76f9c7cfa0ef0aa"
   integrity sha512-MId6riEQkxphBpVeTcL4ZNXL4lScyvDEPLyIafvWMcWNTGK0jgkK7N20XSzqt8ltJb0mGUso5s56mrk8ysHu2A==
 
+"@antv/x6-plugin-clipboard@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-clipboard/-/x6-plugin-clipboard-2.1.6.tgz#98886d5b16a175b67f142ef66c75907de7c1b069"
+  integrity sha512-roZPLnZx6PK8MBvee0QMo90fz/TXeF0WNe4EGin2NBq5M1I5XTWrYvA6N2XVIiWAAI67gjQeEE8TpkL7f8QdqA==
+
 "@antv/x6-plugin-dnd@^2.1.1", "@antv/x6-plugin-dnd@^2.x":
   version "2.1.1"
   resolved "https://registry.npmmirror.com/@antv/x6-plugin-dnd/-/x6-plugin-dnd-2.1.1.tgz#4d9afed8e8105e01e31cdf526068fa686fb6b4aa"
   integrity sha512-v0szzik1RkadPDn4Qi5mOSaB2AeI78D40/YuCYbPVzplG+HydGsHwO3MLTgJPQ+R5n0eM0W5F850p1VfTOHR7g==
+
+"@antv/x6-plugin-export@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-export/-/x6-plugin-export-2.1.6.tgz#f8cedab3707c43728baaf0f0bfb1e75ec4a61a30"
+  integrity sha512-m0ukMmZhrFE5n7uCR43DVQBdiUfpjGN+vm1mc+6RTZdHK8pa6Mxr0RZztaxPy34YA4tli+bGY3ePslsNPfh6PQ==
+
+"@antv/x6-plugin-history@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-history/-/x6-plugin-history-2.2.4.tgz#c4a543b8a2b6ae8b6934ec69067688459cae6c48"
+  integrity sha512-9gHHvEW4Fla+1hxUV49zNgJyIMoV9CjVM52MrFgAJcvyRn1Kvxz4MfxiKlG+DEZUs+/zvfjl9pS6gJOd8laRkg==
+
+"@antv/x6-plugin-keyboard@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-keyboard/-/x6-plugin-keyboard-2.2.1.tgz#a6bf1d1dbec7b520ebb5090fdb275b2f4e3ea42e"
+  integrity sha512-sqfN0h4txVO211uIeKBd3zQ/IN2zPzDThWNTEhRx7Lecg1fO7uRXWBbOA48j3EgpRFXVexdSzIEVJEx+IWUdYw==
+  dependencies:
+    mousetrap "^1.6.5"
+
+"@antv/x6-plugin-minimap@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-minimap/-/x6-plugin-minimap-2.0.6.tgz#d2eb08a464fee3b791f35f55fea1e33f55675066"
+  integrity sha512-of16qYK+M+wiIdEu/AP2oOep49a+SV2XxoD6SX5gnqH5/liGOUKzdatITncW3c3iBgniwRrUmz8XS6GTQNKN0Q==
+
+"@antv/x6-plugin-scroller@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-scroller/-/x6-plugin-scroller-2.0.10.tgz#bdd39d3530e469bbe72c5feca3b6787512232a3d"
+  integrity sha512-CrC5zCbtPe7LJEKK8ucLcDN+9lMtTJNApFmFObAiR/y2LO1QFCHz8GGLVeNOZaIEmJbR/Z/etpJkvc1LE7WhTg==
+
+"@antv/x6-plugin-selection@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-selection/-/x6-plugin-selection-2.2.1.tgz#4868501efb117133a95b4eabaa7946e3f027b01a"
+  integrity sha512-9rV4jKcvqNqcGNBAm14nwOBtC+XC8/6qJTce8f8YBsE3XGSxrr8gNn2bmgzcV+3R+McXbAUaQT5P+vQV1Q6raA==
+
+"@antv/x6-plugin-snapline@^2.1.7":
+  version "2.1.7"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-snapline/-/x6-plugin-snapline-2.1.7.tgz#1b4e3be0a281ba324117b7ac7b9b8c39e484cce2"
+  integrity sha512-AsysoCb9vES0U2USNhEpYuO/W8I0aYfkhlbee5Kt4NYiMfQfZKQyqW/YjDVaS2pm38C1NKu1LdPVk/BBr4CasA==
 
 "@antv/x6-plugin-stencil@^2.1.4":
   version "2.1.4"
@@ -31,6 +73,11 @@
   integrity sha512-/hCrf7h7Vg3Gb9X1ent5cg3sMTUaJoZWQC9NUp9S0KLTtDgYn0KMajZJLNpKPTyK8mNnEjffWZ/skcZBQd1NwA==
   dependencies:
     "@antv/x6-plugin-dnd" "^2.x"
+
+"@antv/x6-plugin-transform@^2.1.8":
+  version "2.1.8"
+  resolved "https://registry.npmmirror.com/@antv/x6-plugin-transform/-/x6-plugin-transform-2.1.8.tgz#0a40cf63f1a0a882b08c800e37319973ba12e4c1"
+  integrity sha512-GvJuiJ4BKp0H7+qx3R1I+Vzbw5gXp9+oByXo/WyVxE3urOC7LC5sqnaDfIjyYMN6ROLPYPZraLSeSyYBgMgcDw==
 
 "@antv/x6-vue-shape@^2.1.1":
   version "2.1.1"
@@ -2285,6 +2332,11 @@ mkdirp@^1.0.3:
   version "1.0.4"
   resolved "https://registry.npmmirror.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+mousetrap@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.npmmirror.com/mousetrap/-/mousetrap-1.6.5.tgz#8a766d8c272b08393d5f56074e0b5ec183485bf9"
+  integrity sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==
 
 mri@^1.1.0:
   version "1.2.0"
