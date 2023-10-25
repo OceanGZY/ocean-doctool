@@ -17,34 +17,41 @@
   
     .content {
       display: flex;
+      width: 100%;
       height: calc(100% - 48px);
   
       .sider {
         position: relative;
         width: 290px;
-        //height: 100%;
-        height: 650px;
+        // height: 100%;
+        height: 800px;
         border-right: 1px solid rgb(0 0 0 / 8%);
       }
   
       .panel {
         height: 100%;
+        width: calc(100% - 580px);
   
         .toolbar {
           display: flex;
           align-items: center;
+          width: 800px;
           height: 38px;
           background-color: #f7f9fb;
           border-bottom: 1px solid rgb(0 0 0 / 8%);
+        }
+        .container{
+          width: 800px;
         }
       }
   
       .config {
         box-sizing: border-box;
-        width: 290px;
+        width: 279px;
         height: 100%;
         padding: 0 10px;
         border-left: 1px solid rgb(0 0 0 / 8%);
+        background-color:#f4f4f4;
       }
     }
   }

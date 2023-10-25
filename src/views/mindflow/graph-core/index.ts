@@ -17,8 +17,8 @@ export default class FlowGraph {
     public static init() {
         this.graph = new Graph({
             container: document.getElementById('container')!,
-            width: 1366,
-            height: 768,
+            width: 600,
+            height: 600,
             background: {
                 color: '#F2F7FA',
               },

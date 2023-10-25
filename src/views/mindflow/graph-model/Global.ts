@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:53:18
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-24 11:53:34
- * @FilePath: /ocean-doctool/src/views/mindflow/graph-model/Global.ts
+ * @LastEditTime: 2023-10-25 23:26:14
+ * @FilePath: \ocean-doctool\src\views\mindflow\graph-model\Global.ts
  * @Description: 注释信息
  */
 import { reactive } from 'vue';
@@ -22,7 +22,7 @@ export const globalGridAttr = reactive({
   angle: 30,
   position: 'center',
   bgSize: JSON.stringify({ width: 150, height: 150 }),
-  opacity: 0.1,
+  opacity: 1,
 
   stroke: '#5F95FF',
   strokeWidth: 1,

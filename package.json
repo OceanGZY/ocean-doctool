@@ -31,6 +31,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "ant-design-vue": "^4.0.0-rc.6",
     "simple-mind-map": "^0.8.0-fix.1",
     "vue": "^3.3.4",
     "vue-router": "4"

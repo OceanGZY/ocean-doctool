@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-23 23:36:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-24 23:10:04
+ * @LastEditTime: 2023-10-25 23:29:29
  * @FilePath: \ocean-doctool\src\views\mindflow\MF.vue
  * @Description: 注释信息
 -->
@@ -20,7 +20,7 @@
           <tool-bar v-if="isReady" />
         </div>
         <!--流程图画板-->
-        <div id="container" ></div>
+        <div id="container" class="container" ></div>
       </div>
       <!--右侧工具栏-->
       <div class="config">
@@ -43,8 +43,8 @@ import './mf.less'
 
 const getContainerSize = () => {
   return {
-    width: document.body.offsetWidth - 590,
-    height: document.body.offsetHeight - 110,
+    width: document.body.offsetWidth -400,
+    height: document.body.offsetHeight-100,
   };
 }
 const isReady = ref(false)

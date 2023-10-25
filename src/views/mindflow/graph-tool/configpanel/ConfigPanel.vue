@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:37:10
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-24 22:29:03
+ * @LastEditTime: 2023-10-25 23:46:08
  * @FilePath: \ocean-doctool\src\views\mindflow\graph-tool\configpanel\ConfigPanel.vue
  * @Description: 注释信息
 -->
@@ -27,7 +27,7 @@ import './panel.less'
 const type = ref('grid');
 const id = ref('');
 // 待优化
-const boundEvent = function (): void {
+const boundEvent = () => {
   const { graph } = FlowGraph;
   graph.on('blank:click', () => {
     type.value = 'grid';
@@ -44,5 +44,7 @@ provide('id', id);
 
 </script>
   
-<style lang="lesss" scoped></style>
+<style lang="less" scoped>
+
+</style>
   

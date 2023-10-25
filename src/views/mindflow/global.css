@@ -22,6 +22,10 @@ body {
 .x6-widget-selection-inner {
   border: 1px dashed #5f95ff;
 }
+.x6-graph-scroller {
+  width: 700px !important;
+  height: 766px !important;
+}
 
 @keyframes stroke {
   100% {
