@@ -23,8 +23,8 @@ body {
   border: 1px dashed #5f95ff;
 }
 .x6-graph-scroller {
-  width: 700px !important;
-  height: 766px !important;
+  width: 100% !important;
+  height: calc(100% -86px) !important;
 }
 
 @keyframes stroke {

@@ -4,70 +4,70 @@
       <template #title>
         <span>清除 (Cmd + D)</span>
       </template>
-      <a-button name="delete" @click="handleClick" class="item-space" size="small"> delete </a-button>
+      <a-button name="delete" @click="handleClick" class="item-space" size="small">删除 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>撤销 (Cmd + Z)</span>
       </template>
-      <a-button :disabled="!canUndo" name="undo" @click="handleClick" class="item-space" size="small"> undo </a-button>
+      <a-button :disabled="!canUndo" name="undo" @click="handleClick" class="item-space" size="small"> 上一步 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>Redo (Cmd + Shift + Z)</span>
       </template>
-      <a-button :disabled="!canRedo" name="redo" @click="handleClick" class="item-space" size="small"> redo </a-button>
+      <a-button :disabled="!canRedo" name="redo" @click="handleClick" class="item-space" size="small"> 下一步 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>复制 (Cmd + Shift + Z)</span>
       </template>
-      <a-button name="copy" @click="handleClick" class="item-space" size="small"> copy </a-button>
+      <a-button name="copy" @click="handleClick" class="item-space" size="small"> 复制 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>剪切 (Cmd + X)</span>
       </template>
-      <a-button name="cut" @click="handleClick" class="item-space" size="small"> cut </a-button>
+      <a-button name="cut" @click="handleClick" class="item-space" size="small"> 剪切 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>粘贴 (Cmd + V)</span>
       </template>
-      <a-button name="paste" @click="handleClick" class="item-space" size="small"> paste </a-button>
+      <a-button name="paste" @click="handleClick" class="item-space" size="small"> 粘贴 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>保存PNG (Cmd + S)</span>
       </template>
-      <a-button name="savePNG" @click="handleClick" class="item-space" size="small"> savePNG </a-button>
+      <a-button name="savePNG" @click="handleClick" class="item-space" size="small"> 保存PNG图片 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>保存SVG (Cmd + S)</span>
       </template>
-      <a-button name="saveSVG" @click="handleClick" class="item-space" size="small"> saveSVG </a-button>
+      <a-button name="saveSVG" @click="handleClick" class="item-space" size="small"> 保存SVG图片 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>打印 (Cmd + P)</span>
       </template>
-      <a-button name="print" @click="handleClick" class="item-space" size="small"> print </a-button>
+      <a-button name="print" @click="handleClick" class="item-space" size="small"> 打印 </a-button>
     </a-tooltip>
 
     <a-tooltip placement="bottom">
       <template #title>
         <span>导出 (Cmd + P)</span>
       </template>
-      <a-button name="toJSON" @click="handleClick" class="item-space" size="small"> toJSON </a-button>
+      <a-button name="toJSON" @click="handleClick" class="item-space" size="small"> 保存JSON </a-button>
     </a-tooltip>
   </div>
 </template>

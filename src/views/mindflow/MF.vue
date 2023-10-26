@@ -2,14 +2,15 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-23 23:36:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-25 23:29:29
- * @FilePath: \ocean-doctool\src\views\mindflow\MF.vue
+ * @LastEditTime: 2023-10-26 23:45:38
+ * @FilePath: /ocean-doctool/src/views/mindflow/MF.vue
  * @Description: 注释信息
 -->
 <template>
   <div class="wrap">
     <div class="header">
-      <span>流程设计器</span>
+      <span>OceanFlow,专为你定制的流程设计器～</span>
+      <router-link to="/">回首页</router-link>
     </div>
     <div class="content">
       <!--左侧工具栏-->
@@ -20,7 +21,7 @@
           <tool-bar v-if="isReady" />
         </div>
         <!--流程图画板-->
-        <div id="container" class="container" ></div>
+        <div id="container" class="container"></div>
       </div>
       <!--右侧工具栏-->
       <div class="config">
@@ -35,7 +36,6 @@ import { onMounted, ref } from 'vue';
 import FlowGraph from './graph-core';
 import ToolBar from './graph-tool/ToolBar/ToolBar.vue';
 import ConfigPanel from './graph-tool/ConfigPanel/ConfigPanel.vue'
-import './reset.less'
 import './global.css'
 import './mf.less'
 
@@ -43,8 +43,8 @@ import './mf.less'
 
 const getContainerSize = () => {
   return {
-    width: document.body.offsetWidth -400,
-    height: document.body.offsetHeight-100,
+    width: document.body.offsetWidth - 400,
+    height: document.body.offsetHeight - 100,
   };
 }
 const isReady = ref(false)
@@ -66,9 +66,6 @@ const initGraph = () => {
 onMounted(() => {
   initGraph();
 })
-
-
-
 </script>
   
 <style lang="less"  scoped></style>
