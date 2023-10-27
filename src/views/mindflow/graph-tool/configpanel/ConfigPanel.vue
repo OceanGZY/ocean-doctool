@@ -2,12 +2,12 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:37:10
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-25 23:46:08
- * @FilePath: \ocean-doctool\src\views\mindflow\graph-tool\configpanel\ConfigPanel.vue
+ * @LastEditTime: 2023-10-27 07:03:09
+ * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/ConfigPanel.vue
  * @Description: 注释信息
 -->
 <template>
-  <div class="config">
+  <div class="config-tool">
     <config-grid v-show="type === 'grid'" />
     <config-node v-show="type === 'node'" />
     <config-edge v-show="type === 'edge'" />

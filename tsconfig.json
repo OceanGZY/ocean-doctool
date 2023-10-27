@@ -8,9 +8,11 @@
       "DOM",
       "DOM.Iterable"
     ],
+    "allowJs": true,
     "skipLibCheck": true,
     /* Node mode */
     "moduleResolution": "Node",
+    "allowSyntheticDefaultImports":true,
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": false,
@@ -27,6 +29,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "src/**/*.js",
     "electron/**/*.ts"
   ],
   "references": [
