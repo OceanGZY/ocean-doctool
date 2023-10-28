@@ -2,13 +2,13 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 09:44:32
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-22 10:47:40
- * @FilePath: /ocean-doctool/vite.config.ts
+ * @LastEditTime: 2023-10-28 09:40:44
+ * @FilePath: \ocean-doctool\vite.config.electron.ts
  * @Description: 注释信息
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import {resolve} from 'path'
 import electron from 'vite-plugin-electron'
 import electronRenderer from "vite-plugin-electron-renderer"
 
@@ -39,4 +39,10 @@ export default defineConfig({
     ]),
     electronRenderer(),
   ],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, 'src'), // 路径别名
+    },
+    extensions: ['.js', '.json', '.ts', '.vue'] // 使用路径别名时想要省略的后缀名，可以自己 增减
+  }
 })

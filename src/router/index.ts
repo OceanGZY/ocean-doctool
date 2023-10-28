@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 23:28:09
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-23 10:13:59
- * @FilePath: /ocean-doctool/src/router/index.ts
+ * @LastEditTime: 2023-10-28 15:33:21
+ * @FilePath: \ocean-doctool\src\router\index.ts
  * @Description: 注释信息
  */
 import { createRouter, createWebHashHistory } from "vue-router"
@@ -35,7 +35,9 @@ const routes = [
     },
 ]
 
-export const router = createRouter({
+const router = createRouter({
     history: createWebHashHistory(),
     routes: routes,
 })
+
+export default router

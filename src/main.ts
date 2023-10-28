@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:04:44
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-26 23:10:22
- * @FilePath: /ocean-doctool/src/main.ts
+ * @LastEditTime: 2023-10-28 15:37:50
+ * @FilePath: \ocean-doctool\src\main.ts
  * @Description: 注释信息
  */
 import { createApp } from 'vue'
@@ -15,7 +15,7 @@ import Antd from 'ant-design-vue'
 // import './style.css'
 import './reset.less'
 import App from './App.vue'
-import { router } from "./router"
+import  router  from "./router"
 
 library.add(faCircle,faSquare,faSquareCaretDown)
 

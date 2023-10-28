@@ -21,4 +21,4 @@ declare module 'simple-mind-map/src/plugins/AssociativeLine.js'
 declare module 'simple-mind-map/src/plugins/TouchEvent.js'
 declare module 'simple-mind-map/src/plugins/NodeImgAdjust.js'
 declare module 'simple-mind-map/src/plugins/Search.js'
-
+declare module 'simple-mind-map/example/exampleData'
