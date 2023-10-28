@@ -1,23 +1,13 @@
 <template>
   <el-dialog custom-class="nodeDialog" v-model="dialogVisible" :title="$t('nodeTag.title')">
-    <el-input
-      v-model="tag"
-      @keyup.native.enter="add"
-      @keyup.native.stop
-      :disabled="tagArr.length >= max"
-      :placeholder="$t('nodeTag.addTip')"
-    >
+    <el-input v-model="tag" @keyup.native.enter="add" @keyup.native.stop :disabled="tagArr.length >= max"
+      :placeholder="$t('nodeTag.addTip')">
     </el-input>
     <div class="tagList">
-      <div
-        class="tagItem"
-        v-for="(item, index) in tagArr"
-        :key="index"
-        :style="{
-          backgroundColor: tagColorList[index].background,
-          color: tagColorList[index].color
-        }"
-      >
+      <div class="tagItem" v-for="(item, index) in tagArr" :key="index" :style="{
+        backgroundColor: tagColorList[index].background,
+        color: tagColorList[index].color
+      }">
         {{ item }}
         <div class="delBtn" @click="del(index)">
           <span class="iconfont iconshanchu"></span>
@@ -39,7 +29,7 @@
  * @Desc: 节点标签内容设置
  */
 import { onMounted, ref } from 'vue'
-import { tagColorList } from 'simple-mind-map/src/constants/constant'
+// import { tagColorList } from 'simple-mind-map/src/constants/constant'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 
 const dialogVisible = ref(false)
@@ -47,6 +37,13 @@ const tagArr = ref([])
 const tag = ref('')
 const activeNodes = ref([])
 const max = ref(5)
+
+const tagColorList = [
+  {
+    color: "red",
+    background: "white"
+  }
+]
 
 onMounted(() => {
   bus.on('node_active', args => {
