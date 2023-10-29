@@ -12,6 +12,7 @@ import AssociativeLine from 'simple-mind-map/src/plugins/AssociativeLine.js'
 import TouchEvent from 'simple-mind-map/src/plugins/TouchEvent.js'
 import NodeImgAdjust from 'simple-mind-map/src/plugins/NodeImgAdjust.js'
 import SearchPlugin from 'simple-mind-map/src/plugins/Search.js'
+import customThemes from "../customThemes"
 export default class OceanMindMap {
     public static mindmap: MindMap;
     public static init() {
@@ -119,6 +120,24 @@ export default class OceanMindMap {
         //         el: document.getElementById('mindMapContainer'),
         //     },
         // );
+        // 注册插件
+        MindMap.usePlugin(MiniMap)
+            .usePlugin(Watermark)
+            .usePlugin(Drag)
+            .usePlugin(KeyboardNavigation)
+            .usePlugin(ExportPDF)
+            .usePlugin(ExportXMind)
+            .usePlugin(Export)
+            .usePlugin(Select)
+            .usePlugin(AssociativeLine)
+            .usePlugin(NodeImgAdjust)
+            .usePlugin(TouchEvent)
+            .usePlugin(SearchPlugin)
+
+        customThemes.forEach(item => {
+            MindMap.defineTheme(item.value, item.theme)
+        })
+
         this.mindmap = new MindMap(
             { el: document.getElementById('mindMapContainer') })
 
