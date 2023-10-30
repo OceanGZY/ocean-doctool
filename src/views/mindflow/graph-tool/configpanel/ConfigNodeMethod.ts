@@ -2,11 +2,11 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:52:11
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-24 11:57:36
- * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/confignode/ConfigNodeMethod.ts
+ * @LastEditTime: 2023-10-30 22:15:26
+ * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/ConfigNodeMethod.ts
  * @Description: 注释信息
  */
-import FlowGraph from '../../../graph-core/index';
+import FlowGraph from '../../graph-core/index';
 
 export function nodeOpt(id: any, globalGridAttr: any) {
   let curCel: any = null;

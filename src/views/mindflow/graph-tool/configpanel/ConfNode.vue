@@ -56,7 +56,7 @@
 <script lang="ts">
 import { defineComponent, inject, watch } from 'vue';
 import { Cell } from '@antv/x6';
-import { nodeOpt } from './ConfigNodeMethod';
+import { nodeOpt } from '@/views/mindflow/graph-tool/configpanel/ConfigNodeMethod';
 
 export default defineComponent({
     name: 'Index',

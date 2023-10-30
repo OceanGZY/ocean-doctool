@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-28 19:42:02
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-30 19:42:27
+ * @LastEditTime: 2023-10-30 21:22:10
  * @FilePath: /ocean-doctool/src/views/mindmap/MM.vue
  * @Description: 注释信息
 -->
@@ -12,7 +12,7 @@
             <span>OceanMindMap,专为你定制的脑图工具～</span>
             <router-link to="/">回首页</router-link>
         </div>
-        <div id="mindMapContainer" class="mindMapContainer"></div>
+        <!-- <div id="mindMapContainer" class="mindMapContainer"></div> -->
         <mind-map-edit></mind-map-edit>
     </div>
 </template>

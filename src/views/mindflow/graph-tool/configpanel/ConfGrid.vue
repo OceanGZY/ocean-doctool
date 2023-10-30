@@ -219,7 +219,7 @@
 import { reactive, inject, watch } from 'vue';
 // import FlowGraph from '@/views/graph'
 
-import { gridOpt, backGroundOpt, gridSizeOpt } from './ConfigGridMethod';
+import { gridOpt, backGroundOpt, gridSizeOpt } from '@/views/mindflow/graph-tool/configpanel/ConfigGridMethod'
 
 enum GRID_TYPE_ENUM {
   DOT = 'dot',

@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-23 23:36:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-26 23:45:38
+ * @LastEditTime: 2023-10-30 22:28:12
  * @FilePath: /ocean-doctool/src/views/mindflow/MF.vue
  * @Description: 注释信息
 -->
@@ -34,8 +34,8 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 import FlowGraph from './graph-core';
-import ToolBar from './graph-tool/ToolBar/ToolBar.vue';
-import ConfigPanel from './graph-tool/ConfigPanel/ConfigPanel.vue'
+import ToolBar from '@/views/mindflow/graph-tool/toolbar/ToolBar.vue';
+import ConfigPanel from '@/views/mindflow/graph-tool/configpanel/ConfigPanel.vue'
 import './global.css'
 import './mf.less'
 

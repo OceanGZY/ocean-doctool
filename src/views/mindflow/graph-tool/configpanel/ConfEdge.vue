@@ -38,7 +38,7 @@
 </template>
   
 <script lang="ts" setup>
-import FlowGraph from '../../../graph-core/index';
+import FlowGraph from '../../graph-core/index';
 import { Edge } from '@antv/x6';
 import { inject, watch } from 'vue';
 

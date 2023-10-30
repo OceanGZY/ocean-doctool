@@ -2,11 +2,11 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:50:48
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-24 11:57:34
- * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/configgrid/ConfigGridMethod.ts
+ * @LastEditTime: 2023-10-30 22:15:16
+ * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/ConfigGridMethod.ts
  * @Description: 注释信息
  */
-import FlowGraph from '../../../graph-core/index';
+import FlowGraph from '../../graph-core/index';
 
 export function gridOpt(globalGridAttr: any) {
   let options;

@@ -2,27 +2,26 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-24 11:37:10
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-27 07:03:09
+ * @LastEditTime: 2023-10-30 22:26:27
  * @FilePath: /ocean-doctool/src/views/mindflow/graph-tool/configpanel/ConfigPanel.vue
  * @Description: 注释信息
 -->
 <template>
   <div class="config-tool">
-    <config-grid v-show="type === 'grid'" />
-    <config-node v-show="type === 'node'" />
-    <config-edge v-show="type === 'edge'" />
+    <conf-grid v-show="type === 'grid'" />
+    <conf-node v-show="type === 'node'" />
+    <conf-edge v-show="type === 'edge'" />
   </div>
 </template>
   
 <script lang="ts" setup>
-import ConfigGrid from './configgrid/index.vue';
-import ConfigNode from './confignode/index.vue';
-import ConfigEdge from './configedge/index.vue'
 import FlowGraph from '../../graph-core/index';
 import { ref, provide } from 'vue';
 import { globalGridAttr } from '../../graph-model/Global';
 import './panel.less'
-
+import ConfEdge  from "@/views/mindflow/graph-tool/configpanel/ConfEdge.vue"
+import ConfNode from "@/views/mindflow/graph-tool/configpanel/ConfNode.vue"
+import ConfGrid  from "@/views/mindflow/graph-tool/configpanel/ConfGrid.vue"
 
 const type = ref('grid');
 const id = ref('');
@@ -44,7 +43,5 @@ provide('id', id);
 
 </script>
   
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>
   

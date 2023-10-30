@@ -1,6 +1,6 @@
 import exampleData from 'simple-mind-map/example/exampleData'
 import { simpleDeepClone } from 'simple-mind-map/src/utils/index'
-import Vue from 'vue'
+// import Vue from 'vue'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 
 const SIMPLE_MIND_MAP_DATA = 'SIMPLE_MIND_MAP_DATA'
