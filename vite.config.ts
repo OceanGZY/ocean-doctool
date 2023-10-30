@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 09:44:32
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-28 21:04:55
+ * @LastEditTime: 2023-10-30 20:09:44
  * @FilePath: /ocean-doctool/vite.config.ts
  * @Description: 注释信息
  */
@@ -16,7 +16,6 @@ export default defineConfig(({ command, mode }) => {
   // 设置第三个参数为 '' 来加载所有环境变量，而不管是否有 `VITE_` 前缀。
   loadEnv(mode, process.cwd())
   return {
-
     plugins: [
       vue()
     ],
@@ -27,5 +26,10 @@ export default defineConfig(({ command, mode }) => {
       extensions: ['.js', '.json', '.ts', '.vue'] // 使用路径别名时想要省略的后缀名，可以自己 增减
     },
     // optimizeDeps: { exclude: ["fsevents"] }
+    build: {
+      commonjsOptions: {
+        esmExternals: true
+      },
+    }
   };
 })

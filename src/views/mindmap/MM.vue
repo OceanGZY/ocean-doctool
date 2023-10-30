@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-28 19:42:02
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-29 11:03:41
- * @FilePath: \ocean-doctool\src\views\mindmap\MM.vue
+ * @LastEditTime: 2023-10-30 19:42:27
+ * @FilePath: /ocean-doctool/src/views/mindmap/MM.vue
  * @Description: 注释信息
 -->
 <template>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import MindMapEdit from "./Edit.vue"
+import MindMapEdit from "./map-core/pages/Edit/Edit.vue"
 import "./mm.less"
 </script>
 
