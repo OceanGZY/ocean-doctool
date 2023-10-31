@@ -1,5 +1,5 @@
 <template>
-  <el-dialog custom-class="nodeDialog" v-model="dialogVisible" :title="$t('nodeTag.title')">
+  <el-dialog class="nodeDialog" v-model="dialogVisible" :title="$t('nodeTag.title')">
     <el-input
       v-model="tag"
       @keyup.native.enter="add"

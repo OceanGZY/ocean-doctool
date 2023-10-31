@@ -126,6 +126,8 @@ const initGroup = () => {
  * @Desc: 使用主题
  */
 const useTheme = item => {
+  // console.log("主题信息")
+  // console.log(item)
   theme.value = item.value
   handleDark()
   const customThemeConfig = props.mindMap.getCustomThemeConfig()

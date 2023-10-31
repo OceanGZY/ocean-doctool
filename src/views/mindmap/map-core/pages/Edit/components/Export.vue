@@ -1,6 +1,6 @@
 <template>
   <el-dialog
-    custom-class="nodeDialog"
+    class="nodeDialog"
     v-model="dialogVisible"
     :title="$t('export.title')"
     width="700px"

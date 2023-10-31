@@ -1,5 +1,13 @@
+<!--
+ * @Author: OCEAN.GZY
+ * @Date: 2023-08-04 13:54:38
+ * @LastEditors: OCEAN.GZY
+ * @LastEditTime: 2023-10-31 10:29:32
+ * @FilePath: /ocean-doctool/src/views/mindmap/map-core/pages/Edit/components/NodeHyperlink.vue
+ * @Description: 注释信息
+-->
 <template>
-  <el-dialog custom-class="nodeDialog" v-model="dialogVisible" :title="$t('nodeHyperlink.title')">
+  <el-dialog class="nodeDialog" v-model="dialogVisible" :title="$t('nodeHyperlink.title')">
     <div class="item">
       <span class="name">{{ $t('nodeHyperlink.link') }}</span>
       <el-input v-model="link" size="small" placeholder="http://xxxx.com/"></el-input>
