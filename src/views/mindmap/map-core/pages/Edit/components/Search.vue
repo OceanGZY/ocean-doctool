@@ -141,7 +141,7 @@ export default {
   border-radius: 12px;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 110px;
+  top: 140px;
   right: -296px;
   transition: all 0.3s;
   &.isDark {

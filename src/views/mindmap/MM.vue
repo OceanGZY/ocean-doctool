@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-28 19:42:02
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-30 21:22:10
+ * @LastEditTime: 2023-10-31 14:25:57
  * @FilePath: /ocean-doctool/src/views/mindmap/MM.vue
  * @Description: 注释信息
 -->
@@ -13,7 +13,10 @@
             <router-link to="/">回首页</router-link>
         </div>
         <!-- <div id="mindMapContainer" class="mindMapContainer"></div> -->
-        <mind-map-edit></mind-map-edit>
+        <div class="content">
+            <mind-map-edit></mind-map-edit>
+        </div>
+        
     </div>
 </template>
 

@@ -487,7 +487,7 @@ export default {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 20px;
+    // top: 20px;
     width: max-content;
     max-width: 100%;
     display: flex;
