@@ -26,7 +26,7 @@ import bus from '@/views/mindmap/map-core/utils/bus.js'
 import { mapState, useStore } from 'vuex'
 import { layoutImgMap } from '@/views/mindmap/map-core/config/constant.js'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 结构
  */
 const props = defineProps({
@@ -63,7 +63,7 @@ onMounted(() => {
   })
 })
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 使用主题
  */
 const useLayout = layout => {

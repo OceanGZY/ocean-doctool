@@ -175,11 +175,11 @@ export default {
             margin-bottom: 10px;
             cursor: pointer;
             position: relative;
-            /deep/ img {
+            :deep( img ){
               width: 100%;
               height: 100%;
             }
-            /deep/ svg {
+            :deep(svg ){
               width: 100%;
               height: 100%;
             }
@@ -215,7 +215,7 @@ export default {
           margin-bottom: 10px;
           cursor: pointer;
           position: relative;
-          /deep/ img {
+          :deep( img) {
             width: 100%;
             height: 100%;
             object-fit: contain;

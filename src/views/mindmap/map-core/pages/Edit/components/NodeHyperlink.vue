@@ -29,7 +29,7 @@
 import { ref, onMounted } from 'vue'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 节点超链接内容设置
  */
 const dialogVisible = ref(false)
@@ -57,7 +57,7 @@ onMounted(() => {
 })
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 取消
  */
 const cancel = () => {
@@ -67,7 +67,7 @@ const cancel = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc:  确定
  */
 const confirm = () => {

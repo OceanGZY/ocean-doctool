@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:33:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-31 17:15:45
+ * @LastEditTime: 2023-10-31 21:37:00
  * @FilePath: /ocean-doctool/src/views/mindppt/MP.vue
  * @Description: 注释信息
 -->
@@ -27,7 +27,6 @@
 
 <script setup lang="ts">
 import "./mp.less"
-import "@/../slides.md"
 import { ref, onMounted } from 'vue'
 const textarea = ref('')
 const ppturl = ref('')

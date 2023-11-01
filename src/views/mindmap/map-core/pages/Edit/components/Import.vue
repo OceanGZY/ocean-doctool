@@ -24,7 +24,7 @@
 
 <script setup>
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 导入功能
  */
 import { onMounted, ref, watch } from 'vue'
@@ -57,7 +57,7 @@ onMounted(() => {
 })
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 文件选择
  */
 const onChange = file => {
@@ -74,7 +74,7 @@ const onChange = file => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 数量超出限制
  */
 const onExceed = () => {
@@ -85,7 +85,7 @@ const onExceed = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 取消
  */
 const cancel = () => {
@@ -93,7 +93,7 @@ const cancel = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 确定导入
  */
 const confirm = () => {
@@ -117,7 +117,7 @@ const confirm = () => {
   cancel()
 }
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 处理.smm文件
  */
 const handleSmm = file => {
@@ -145,7 +145,7 @@ const handleSmm = file => {
   cancel()
 }
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 处理.xmind文件
  */
 const handleXmind = async file => {
@@ -166,7 +166,7 @@ const handleXmind = async file => {
   }
 }
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 处理.xlsx文件
  */
 const handleExcel = async file => {
@@ -231,7 +231,7 @@ const handleExcel = async file => {
   }
 }
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 处理markdown文件
  */
 const handleMd = async file => {

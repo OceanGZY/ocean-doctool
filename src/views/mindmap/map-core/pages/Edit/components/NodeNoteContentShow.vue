@@ -16,7 +16,7 @@ import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer'
 import '@toast-ui/editor/dist/toastui-editor-viewer.css'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 节点备注内容显示
  */
 export default {
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 显示备注浮层
      */
     onShowNoteContent([content, left, top]) {
@@ -57,14 +57,14 @@ export default {
       this.show = true
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 隐藏备注浮层
      */
     hideNoteContent() {
       this.show = false
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 初始化编辑器
      */
     initEditor() {

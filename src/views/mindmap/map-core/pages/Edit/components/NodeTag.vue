@@ -35,7 +35,7 @@
 
 <script setup>
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 节点标签内容设置
  */
 import { onMounted, ref } from 'vue'
@@ -73,7 +73,7 @@ onMounted(() => {
 })
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 添加
  */
 const add = () => {
@@ -82,7 +82,7 @@ const add = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 删除
  */
 const del = index => {
@@ -90,7 +90,7 @@ const del = index => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 取消
  */
 const cancel = () => {
@@ -99,7 +99,7 @@ const cancel = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc:  确定
  */
 const confirm = () => {

@@ -11,7 +11,7 @@
 
 <script setup>
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 全屏
  */
 import { defineProps, onMounted, watch } from 'vue'

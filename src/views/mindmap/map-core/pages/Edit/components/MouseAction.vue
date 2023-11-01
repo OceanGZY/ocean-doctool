@@ -14,7 +14,7 @@
 <script>
 import { mapState, mapMutations } from 'vuex'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 鼠标操作设置
  */
 export default {

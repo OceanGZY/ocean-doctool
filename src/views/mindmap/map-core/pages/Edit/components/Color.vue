@@ -15,7 +15,7 @@ import { colorList } from '@/views/mindmap/map-core/config'
 import { mapState } from 'vuex'
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 颜色选择器
  */
 export default {
@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 点击预设颜色
      */
     clickColorItem(color) {
@@ -53,7 +53,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 修改颜色
      */
     changeColor() {

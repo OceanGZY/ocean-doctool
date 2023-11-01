@@ -1,10 +1,10 @@
 <template>
   <div class="navigatorContainer" :class="{ isDark: isDark }">
-    <div class="item">
+    <!-- <div class="item">
       <el-select v-model="lang" size="small" style="width: 100px" @change="onLangChange">
         <el-option v-for="item in langList" :key="item.value" :label="item.name" :value="item.value" />
       </el-select>
-    </div>
+    </div> -->
     <div class="item">
       <div class="btn iconfont iconsousuo" @click="showSearch"></div>
     </div>
@@ -46,7 +46,7 @@
 
 <script setup>
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 导航器工具栏
  */
 import { ref, onMounted, defineProps, computed } from 'vue'

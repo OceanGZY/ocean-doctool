@@ -23,7 +23,7 @@ import { nodeIconList } from 'simple-mind-map/src/svg/icons'
 import icon from '@/views/mindmap/map-core/config/icon'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 节点图标内容设置
  */
 export default {
@@ -55,7 +55,7 @@ export default {
       return /^<svg/.test(icon) ? icon : `<img src="${icon}" />`
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 设置icon
      */
     setIcon(type, name) {
@@ -88,7 +88,7 @@ export default {
 
 <style lang="less" scoped>
 .nodeDialog {
-  /deep/ .el-dialog__body {
+  :deep(.el-dialog__body) {
     padding: 0 20px;
   }
 
@@ -115,11 +115,11 @@ export default {
         margin-bottom: 10px;
         cursor: pointer;
         position: relative;
-        /deep/ img {
+        :deep( img ){
           width: 100%;
           height: 100%;
         }
-        /deep/ svg {
+        :deep( svg ){
           width: 100%;
           height: 100%;
         }

@@ -19,7 +19,7 @@ import { mapState, mapMutations } from 'vuex'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 侧边栏容器
  */
 export default {

@@ -1,24 +1,11 @@
 <template>
   <Sidebar ref="sidebar" :title="$t('outline.title')">
-    <el-tree
-      class="outlineTree"
-      :class="{ isDark: isDark }"
-      :data="data"
-      :props="defaultProps"
-      :expand-on-click-node="false"
-      default-expand-all
-    >
+    <el-tree class="outlineTree" :class="{ isDark: isDark }" :data="data" :props="defaultProps"
+      :expand-on-click-node="false" default-expand-all>
       <template #default="{ node }">
         <span class="customNode" @click="onClick($event, node)">
-          <span
-            class="nodeEdit"
-            :key="getKey()"
-            contenteditable="true"
-            @keydown.stop="onKeydown($event, node)"
-            @keyup.stop
-            @blur="onBlur($event, node)"
-            v-html="node.label"
-          ></span>
+          <span class="nodeEdit" :key="getKey()" contenteditable="true" @keydown.stop="onKeydown($event, node)"
+            @keyup.stop @blur="onBlur($event, node)" v-html="node.label"></span>
         </span>
       </template>
     </el-tree>
@@ -27,7 +14,7 @@
 
 <script setup>
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 大纲内容
  */
 import { onMounted, ref, watch, computed } from 'vue'
@@ -125,33 +112,41 @@ const onClick = (e, node) => {
 .customNode {
   width: 100%;
   overflow-x: auto;
+
   &::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
+
   &::-webkit-scrollbar-thumb {
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
+
   &::-webkit-scrollbar-track {
     box-shadow: none;
     background: transparent;
     display: none;
   }
+
   .nodeEdit {
     outline: none;
   }
 }
+
 .outlineTree {
   &.isDark {
     background-color: #262a2e;
   }
-  /deep/ .el-tree-node__content {
+
+  :deep(.el-tree-node__content) {
     height: auto;
     margin: 5px 0;
+
     .el-tree-node__expand-icon.is-leaf {
       position: relative;
+
       &::after {
         position: absolute;
         content: '';

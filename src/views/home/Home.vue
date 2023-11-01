@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-23 10:08:10
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-10-31 15:05:12
+ * @LastEditTime: 2023-11-01 11:16:42
  * @FilePath: /ocean-doctool/src/views/home/Home.vue
  * @Description: 注释信息
 -->
@@ -20,6 +20,7 @@
 
       <div class="btn-groups">
         <router-link class="btn" to="/mindflow">MindFlow</router-link>
+        <router-link class="btn" to="/minddoc">MindDOC</router-link>
         <router-link class="btn" to="/mindppt">MindPPT</router-link>
         <router-link class="btn" to="/mindmap">MindMap</router-link>
       </div>

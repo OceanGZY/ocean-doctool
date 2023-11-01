@@ -196,7 +196,7 @@ import { getData } from '../../../api'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 工具栏
  */
 let fileHandle = null
@@ -263,21 +263,21 @@ export default {
       this.setActiveSidebar('nodeIconSidebar')
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 监听模式切换
      */
     onModeChange(mode) {
       this.readonly = mode === 'readonly'
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 监听节点激活
      */
     onNodeActive(...args) {
       this.activeNodes = args[0][1]
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 监听前进后退
      */
     onBackForward(index, len) {
@@ -285,7 +285,7 @@ export default {
       this.forwardEnd = index >= len - 1
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 监听本地文件读写
      */
     onWriteLocalFile(content) {
@@ -295,7 +295,7 @@ export default {
       }, 1000)
     },
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 打开本地文件
      */
     async openLocalFile() {
@@ -335,7 +335,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 读取本地文件
      */
     async readFile() {
@@ -356,7 +356,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 渲染读取的数据
      */
     setData(str) {
@@ -382,7 +382,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 写入本地文件
      */
     async writeLocalFile(content) {
@@ -399,7 +399,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 创建本地文件
      */
     async createNewLocalFile() {
@@ -407,7 +407,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 另存为
      */
     async saveLocalFile() {
@@ -416,7 +416,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 创建本地文件
      */
     async createLocalFile(content) {

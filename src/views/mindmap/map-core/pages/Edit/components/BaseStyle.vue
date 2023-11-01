@@ -609,7 +609,7 @@ import { storeConfig } from '@/views/mindmap/map-core/api'
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 import { mapState, mapMutations } from 'vuex'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 基础样式
  */
 export default {
@@ -718,7 +718,7 @@ export default {
   methods: {
     ...mapMutations(['setLocalConfig']),
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 初始样式
      */
     initStyle() {
@@ -773,7 +773,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: margin初始值
      */
     initMarginStyle() {
@@ -783,7 +783,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 更新配置
      */
     update(key, value) {
@@ -831,7 +831,7 @@ export default {
     },
 
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 设置margin
      */
     updateMargin(type, value) {

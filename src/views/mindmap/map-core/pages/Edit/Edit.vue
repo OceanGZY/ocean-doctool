@@ -50,7 +50,7 @@ export default {
     ...mapActions(['getUserMindMapData']),
     ...mapMutations(['setLocalConfig']),
     /**
-     * @Author: 黄原寅
+     * @Author: OceanGZY
      * @Desc: 初始化本地配置
      */
     initLocalConfig() {

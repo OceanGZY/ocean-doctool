@@ -24,7 +24,7 @@ import Editor from '@toast-ui/editor'
 import '@toast-ui/editor/dist/toastui-editor.css' // Editor's Style
 import bus from '@/views/mindmap/map-core/utils/bus.js'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 节点备注内容设置
  */
 const dialogVisible = ref(false)
@@ -53,7 +53,7 @@ onMounted(() => {
 })
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 初始化编辑器
  */
 const initEditor = () => {
@@ -69,7 +69,7 @@ const initEditor = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 取消
  */
 const cancel = () => {
@@ -78,7 +78,7 @@ const cancel = () => {
 }
 
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc:  确定
  */
 const confirm = () => {

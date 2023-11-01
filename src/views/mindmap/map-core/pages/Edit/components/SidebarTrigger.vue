@@ -22,7 +22,7 @@
 import { mapState, mapMutations } from 'vuex'
 import { sidebarTriggerList } from '@/views/mindmap/map-core/config'
 /**
- * @Author: 黄原寅
+ * @Author: OceanGZY
  * @Desc: 侧边栏触发器
  */
 export default {
