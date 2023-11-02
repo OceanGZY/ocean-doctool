@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:04:44
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-11-01 16:59:47
+ * @LastEditTime: 2023-11-02 15:37:24
  * @FilePath: /ocean-doctool/src/vite-env.d.ts
  * @Description: 注释信息
  */
@@ -23,7 +23,6 @@ declare module 'simple-mind-map/src/plugins/NodeImgAdjust.js'
 declare module 'simple-mind-map/src/plugins/Search.js'
 declare module 'simple-mind-map/example/exampleData'
 declare module 'vue-quill-editor/dist/vue-quill-editor.js'
-declare module 'markdown-it'
 declare interface Window {
     ws: any,
 }

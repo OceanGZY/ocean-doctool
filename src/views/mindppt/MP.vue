@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:33:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-11-01 17:31:00
+ * @LastEditTime: 2023-11-02 17:10:50
  * @FilePath: /ocean-doctool/src/views/mindppt/MP.vue
  * @Description: 注释信息
 -->
@@ -20,7 +20,6 @@
             </div>
             <div class="ppt-container">
                 <article id="webslides" v-html="pptdata">
-
                 </article>
             </div>
         </div>
@@ -30,10 +29,11 @@
 <script setup lang="ts">
 import "./mp.less"
 import { ref, onMounted } from 'vue'
-import "webslides/static/js/webslides.js"
-import "webslides/static/js/svg-icons.js"
-import "webslides/static/css/webslides.css"
-import "webslides/static/css/svg-icons.css"
+import "./ppt-core/webslides/js/webslides.js"
+import "./ppt-core/webslides/js/svg-icons.js"
+import "./ppt-core/webslides/css/webslides.css"
+import "./ppt-core/webslides/css/svg-icons.css"
+import "katex/dist/katex.min.css"
 import MD2PPT from "./ppt-core/md2ppt"
 
 

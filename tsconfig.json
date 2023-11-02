@@ -37,6 +37,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.js",
+    "src/**/*.css",
     "src/**/*.md",
     "electron/**/*.ts"
   ],
