@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:33:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-11-02 17:10:50
+ * @LastEditTime: 2023-11-02 20:03:04
  * @FilePath: /ocean-doctool/src/views/mindppt/MP.vue
  * @Description: 注释信息
 -->
@@ -35,7 +35,7 @@ import "./ppt-core/webslides/css/webslides.css"
 import "./ppt-core/webslides/css/svg-icons.css"
 import "katex/dist/katex.min.css"
 import MD2PPT from "./ppt-core/md2ppt"
-
+import { parser } from 'posthtml-parser'
 
 const textarea = ref('# 欢迎使用OceanMind PTT~')
 const pptdata = ref('')
@@ -46,8 +46,12 @@ onMounted(() => {
 })
 
 const domd2ppt = (value: any) => {
-    console.log(md2ppt.render(value))
-    pptdata.value = md2ppt.render(value)
+    // console.log(md2ppt.render(value))
+    const htmlold = md2ppt.render(value)
+    const asttemp = parser(htmlold)
+    console.log("语法树是:")
+    console.log(asttemp)
+    pptdata.value = htmlold
 }
 </script>
 
