@@ -2,7 +2,7 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:33:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-11-02 22:53:45
+ * @LastEditTime: 2023-11-02 23:16:27
  * @FilePath: \ocean-doctool\src\views\mindppt\MP.vue
  * @Description: 注释信息
 -->
@@ -35,7 +35,7 @@ import "./ppt-core/webslides/css/webslides.css"
 import "./ppt-core/webslides/css/svg-icons.css"
 import "katex/dist/katex.min.css"
 import MD2PPT from "./ppt-core/md2ppt"
-import { Node, parser } from 'posthtml-parser'
+import { parser } from 'posthtml-parser'
 import { render } from 'posthtml-render'
 
 const textarea = ref('# 欢迎使用OceanMind PTT~')
@@ -44,10 +44,11 @@ let md2ppt: any
 onMounted(() => {
     md2ppt = MD2PPT.init()
     pptdata.value = '<sction id="section" class="slide" ><div class="wrap size-50 aligncenter"><h2><strong>Why WebSlides?</strong></h2><p class="text-intro">Good karma &amp; Productivity.</p></div></sction>'
+    console.log(parser(pptdata.value))
 })
 
 const domd2ppt = (value: any) => {
-    // console.log(md2ppt.render(value))
+    console.log(value)
     const htmlold = md2ppt.render(value)
     const asttemp = parser(htmlold)
     console.log("将原Html转换后的语法树是:")
@@ -57,21 +58,23 @@ const domd2ppt = (value: any) => {
         switch (element) {
             case element != "\n":
                 break;
-
             default:
                 temp.push(element)
                 break;
         }
-
-
-
     });
     console.log(temp)
 
     const htmlnew = render(temp)
     console.log("转换后的Html是：")
+
     console.log(htmlnew)
     pptdata.value = htmlnew
+
+
+    // console.log(
+    //     parser('<sction id="section" class="slide" ><div class="wrap size-50 aligncenter"><h2><strong>Why WebSlides?</strong></h2><p class="text-intro">Good karma &amp; Productivity.</p></div></sction>')
+    // )
 }
 </script>
 
