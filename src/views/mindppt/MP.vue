@@ -2,8 +2,8 @@
  * @Author: OCEAN.GZY
  * @Date: 2023-10-22 13:33:40
  * @LastEditors: OCEAN.GZY
- * @LastEditTime: 2023-11-02 23:16:27
- * @FilePath: \ocean-doctool\src\views\mindppt\MP.vue
+ * @LastEditTime: 2023-11-02 23:51:57
+ * @FilePath: /ocean-doctool/src/views/mindppt/MP.vue
  * @Description: 注释信息
 -->
 <template>
@@ -56,8 +56,6 @@ const domd2ppt = (value: any) => {
     let temp: any[] = []
     asttemp.forEach(element => {
         switch (element) {
-            case element != "\n":
-                break;
             default:
                 temp.push(element)
                 break;
@@ -69,7 +67,9 @@ const domd2ppt = (value: any) => {
     console.log("转换后的Html是：")
 
     console.log(htmlnew)
-    pptdata.value = htmlnew
+    const html_complate = `<sction id="section" class="slide" ><div class="wrap size-50 aligncenter">${htmlnew}</div></section>`
+
+    pptdata.value = html_complate
 
 
     // console.log(
